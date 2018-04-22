@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  bar:
+    build:
+      context: ./bar
+      args:
+      - PUBLIC_URL=/bar
+    networks:
+      - test
+
+  foo:
+    build:
+      context: ./foo
+      args:
+      - PUBLIC_URL=/foo
+    networks:
+      - test
+
+  gateway:
+    build:
+      context: ./gateway
+    ports:
+      - 8080:80
+    networks:
+      - test
+    depends_on:
+      - bar
+      - foo
+
+networks:
+  test:
