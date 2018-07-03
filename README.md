@@ -1,6 +1,6 @@
 # multiple-react-nginx
 
-Completely containerized multiple SPAs created by CRA with client-side routing accessible through an nginx gateway under different paths as explained in detail [here](https://akullpp.com/multiple-spa-paths-gateway).
+Completely containerized multiple SPAs created by CRA with client-side routing accessible through an nginx gateway under different paths as explained in detail [here](http://chrysanthium.com/multiple-spa-paths-gateway).
 
 ## Run
 
